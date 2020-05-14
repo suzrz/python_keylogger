@@ -9,10 +9,10 @@ Most of code is taken from [here](https://pypi.org/project/pynput/).
 
 Tested on OSX.
 
-#Requirements
+# Requirements
 - Python3.7
 - pynput
 - Root privileges
 
-#Usage
+# Usage
 `sudo python3.7 keylogger.py`
